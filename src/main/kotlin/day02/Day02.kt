@@ -36,8 +36,7 @@ fun main() {
                 report.indices.any {
                     val modded = report.toMutableList()
                     modded.removeAt(it)
-                    val checkLevel = checkLevel(modded)
-                    checkLevel
+                    checkLevel(modded)
                 }
             }
         }
