@@ -20,16 +20,18 @@ fun main() {
         var count = 0
         for(row in rows){
             for (col in cols){
-                if("XMAS" == get(row, col, 4, Direction.E)) count++
-                if("XMAS" == get(row, col, 4,  Direction.W)) count++
-                if("XMAS" == get(row, col, 4, Direction.S)) count++
-                if("XMAS" == get(row, col, 4, Direction.N)) count++
+                if (map[row][col] == 'X') {
+                    if ("XMAS" == get(row, col, 4, Direction.E)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.W)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.S)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.N)) count++
 
-                if("XMAS" == get(row, col, 4, Direction.SE)) count++
-                if("XMAS" == get(row, col, 4, Direction.SW)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.SE)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.SW)) count++
 
-                if("XMAS" == get(row, col, 4, Direction.NE)) count++
-                if("XMAS" == get(row, col, 4, Direction.NW)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.NE)) count++
+                    if ("XMAS" == get(row, col, 4, Direction.NW)) count++
+                }
             }
         }
 
